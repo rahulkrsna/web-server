@@ -18,7 +18,7 @@ var middleware = {
 app.use(middleware.logger);
 
 app.get("/about", middleware.requireAuthentication, function(request, response) {
-	response.send("About Us: Rahul Krishna Vasantham")
+	response.send("About Us: Rahul Krishna Vasantham.")
 })
 
 // allow the public folder for access
