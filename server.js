@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
-const PORT = 3000;
+// const PORT = 3000;
+const PORT = process.env.PORT || 3000; //process.env.PORT is set by Heroku
 var middleware = require("./middleware.js")
 
 // app.use(middleware.requireAuthentication);
